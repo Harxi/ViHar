@@ -1,3 +1,6 @@
+#ViHar 0.1
+#Gmail: sup.harzi@gmail.com
+
 import os
 import sys
 
@@ -31,7 +34,7 @@ class ViHar(object):
 			if mode == '1':
 				self.memory[position] = self.memory[int(data)]
 			elif mode == '2':
-				if self.bite(data) > 0x10065//2:
+				if self.bite(data) > 0xFFF+1:
 					print('Memory limit exceeded')
 				else:
 					self.memory[position] = data
