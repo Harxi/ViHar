@@ -1,4 +1,4 @@
-#ViHar 0.1
+#ViHar 0.2
 #Gmail: sup.harzi@gmail.com
 
 import os
@@ -18,13 +18,10 @@ class ViHar(object):
 	
 	def bite(self, text):
 		return len(text.encode('utf-8'))
-	
-	def sorting(self, commands):
-		return commands.split(' ')
 		
 	def restart(self):
 		os.execv(sys.executable, ['python'] + sys.argv)
-	def move(self, position, data, mode='2'):
+	def move(self, position, data, mode):
 		try:
 			self.memory[int(position)]
 		except:
