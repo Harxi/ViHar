@@ -5,11 +5,10 @@ vh = vh.ViHar()
 end = ''
 
 while True:
-	a = input('ViHar V0 : ')
-	if a == 'exec':
-		end = end.split('!>=<!')
-		for cmd in end:
-			vh.compile(vh.sorting(cmd))
+	a = input('ViHar V1 : ')
+	if a == 'vhi':
+		end = end.split('!=!')
+		vh.compile(end)
 		end = ''
 	else:
-		end += f'{a}'
+		end += a
