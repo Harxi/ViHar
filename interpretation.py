@@ -6,7 +6,7 @@ end = ''
 
 while True:
 	a = input('ViHar V1 : ')
-	if a == 'vhi':
+	if a == 'vhe':
 		end = end.split('!=!')
 		vh.compile(end)
 		end = ''
